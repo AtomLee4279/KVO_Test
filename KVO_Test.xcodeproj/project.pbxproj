@@ -13,6 +13,8 @@
 		67C9578320A29CA800D8B2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C9578220A29CA800D8B2E3 /* Assets.xcassets */; };
 		67C9578620A29CA800D8B2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C9578420A29CA800D8B2E3 /* LaunchScreen.storyboard */; };
 		67C9578920A29CA800D8B2E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C9578820A29CA800D8B2E3 /* main.m */; };
+		67C9579520A29D7B00D8B2E3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C9579420A29D7B00D8B2E3 /* Person.m */; };
+		67C9579820A29DAF00D8B2E3 /* ObserverPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C9579720A29DAF00D8B2E3 /* ObserverPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		67C9578520A29CA800D8B2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67C9578720A29CA800D8B2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67C9578820A29CA800D8B2E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67C9579320A29D7B00D8B2E3 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		67C9579420A29D7B00D8B2E3 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		67C9579620A29DAF00D8B2E3 /* ObserverPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObserverPerson.h; sourceTree = "<group>"; };
+		67C9579720A29DAF00D8B2E3 /* ObserverPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObserverPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,53 @@
 		67C9577820A29CA300D8B2E3 /* KVO_Test */ = {
 			isa = PBXGroup;
 			children = (
-				67C9577920A29CA400D8B2E3 /* AppDelegate.h */,
-				67C9577A20A29CA400D8B2E3 /* AppDelegate.m */,
-				67C9577C20A29CA400D8B2E3 /* ViewController.h */,
-				67C9577D20A29CA400D8B2E3 /* ViewController.m */,
-				67C9577F20A29CA400D8B2E3 /* Main.storyboard */,
+				67C9578F20A29CB800D8B2E3 /* Model */,
+				67C9579020A29CE400D8B2E3 /* View */,
+				67C9579120A29CEB00D8B2E3 /* Controller */,
+				67C9579220A29D1D00D8B2E3 /* Others */,
 				67C9578220A29CA800D8B2E3 /* Assets.xcassets */,
 				67C9578420A29CA800D8B2E3 /* LaunchScreen.storyboard */,
 				67C9578720A29CA800D8B2E3 /* Info.plist */,
-				67C9578820A29CA800D8B2E3 /* main.m */,
 			);
 			path = KVO_Test;
+			sourceTree = "<group>";
+		};
+		67C9578F20A29CB800D8B2E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67C9579320A29D7B00D8B2E3 /* Person.h */,
+				67C9579420A29D7B00D8B2E3 /* Person.m */,
+				67C9579620A29DAF00D8B2E3 /* ObserverPerson.h */,
+				67C9579720A29DAF00D8B2E3 /* ObserverPerson.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67C9579020A29CE400D8B2E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67C9577F20A29CA400D8B2E3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67C9579120A29CEB00D8B2E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67C9577C20A29CA400D8B2E3 /* ViewController.h */,
+				67C9577D20A29CA400D8B2E3 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67C9579220A29D1D00D8B2E3 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				67C9578820A29CA800D8B2E3 /* main.m */,
+				67C9577920A29CA400D8B2E3 /* AppDelegate.h */,
+				67C9577A20A29CA400D8B2E3 /* AppDelegate.m */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				67C9577E20A29CA400D8B2E3 /* ViewController.m in Sources */,
+				67C9579820A29DAF00D8B2E3 /* ObserverPerson.m in Sources */,
 				67C9578920A29CA800D8B2E3 /* main.m in Sources */,
+				67C9579520A29D7B00D8B2E3 /* Person.m in Sources */,
 				67C9577B20A29CA400D8B2E3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

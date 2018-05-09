@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "Person.h"
+#import "ObserverPerson.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    Person *person = [[Person alloc] init];
+    ObserverPerson *observer = [[ObserverPerson alloc] init];
+    person.observerPerson = observer;
+    [person testKVO];
+    [person setValue:@"hhhh" forKeyPath:@"name"];
 }
 
 
